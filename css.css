@@ -1,0 +1,349 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   
+}
+
+
+/* bagian header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0 5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+header div h1 {
+    font-size: 3rem;
+    margin: 1rem;
+    font-weight: 700;
+}
+
+header div div {
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+header div div a {
+    text-decoration: none;
+    color: black;
+}
+
+header div div a:hover {
+    color: orange;
+}
+
+/* bagian section 1 */
+#menu {
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+    align-items: center;
+   
+}
+
+#menu .desc {
+    padding-left: 2rem ;
+    color: gray;
+    font-size: 1.5rem;
+}
+
+#menu .desc h1 {
+    font-size: 3rem;
+    color: black;
+    font-weight: 700;
+}
+
+#menu .desc button {
+    border: none;
+    font-size: 1.5rem;
+}
+
+#menu .desc .button1 {
+    background-color: white;
+    border: 0.2rem solid orange;
+    padding: 0.4rem 2rem;
+}
+
+#menu .desc .button2 {
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 2rem;
+    margin-left: 1rem;
+}
+
+
+/* bagian about */
+#about {
+    display: flex;
+    margin: 5rem 4rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+#about .desc > h1 {
+    font-size: 3rem;
+}
+
+#about .desc p {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+#about .desc .data {
+    display: flex;
+    gap: 3rem ;
+    text-align: center;
+    justify-content: center;
+}
+
+#about .desc .data h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+#about .desc .data div div {
+    width: 5rem;
+    height: 0.7rem;
+    background-color: orange;
+    position: relative;
+    left: 1rem;
+}
+
+/* bagian service */
+
+#service .title  {
+    display: flex;
+    margin: 5rem 4rem;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#service .title h1 {
+    font-size: 4rem;
+}
+
+#service .title button {
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    position: relative;
+    right: 5rem;
+}
+
+#service > p {
+    color: grey;
+    font-size: 1.5rem;
+    position: relative;
+    margin: -7rem 0rem 5rem 4rem ;
+    width: 50%;
+}
+
+#service .product {
+    display: flex;
+    justify-content: center;
+    gap: 5rem ;
+}
+
+#service .product div {
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+    height: 30rem;
+    border: 0.2rem solid orange;
+    box-shadow: ;
+    overflow: hidden;
+    background-position: center;
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 10%);
+}
+
+#service .product div:hover {
+    transform: scale(1.1);
+    transition: 0.1s linear;
+}
+
+/* bagian contact */
+
+#contact {
+    margin:10rem 4rem;
+
+}
+
+#contact .title h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+#contact .title p {
+    font-size: 1.5rem;
+    color: grey;
+    margin-bottom: 5rem;
+}
+
+#contact .section {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: ;
+}
+
+#contact .section .map iframe {
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+#contact .section form {
+    
+    border: 0.5rem solid orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-areas: "h2 h2"
+                         "name subject"
+                         "email phone"
+                         "message message";
+     gap: 2rem;                    
+}
+
+
+
+.form #h2 {
+    grid-area:h2;
+    padding: 0 5rem;
+    font-size: 2rem;
+}
+.form #name {
+    grid-area:name;
+    border: none;
+    outline: none;
+    border-bottom: 0.2rem solid orange;
+    text-align: center;
+    padding: 0;
+    font-size: 1.5rem;
+}
+.form #subject{
+    grid-area:subject;
+    border: none;
+    outline: none;
+    border-bottom: 0.2rem solid orange;
+    text-align: center;
+    padding: 0;
+    font-size: 1.5rem;
+}
+.form #email{
+    grid-area:email;
+    border: none;
+    outline: none;
+    border-bottom: 0.2rem solid orange;
+    text-align: center;
+    padding: 0;
+    font-size: 1.5rem;
+}
+.form #phone{ 
+    grid-area:phone;
+    border: none;
+    outline: none;
+    border-bottom: 0.2rem solid orange;
+    text-align: center;
+    padding: 0;
+    font-size: 1.5rem;
+}
+.form #message{
+    grid-area:message;
+    border: none;
+    outline: none;
+    border-bottom: 0.2rem solid orange;
+    text-align: center;
+    padding: 0;
+    font-size: 1.5rem;
+}
+.form #submit {
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    position: relative;
+    margin: 2rem;
+    left: 10rem;
+    
+}
+
+.form #submit:hover {
+    filter: brightness(1.1);
+}
+
+
+/* bagian footer */
+.footer {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .title {
+    margin: 1rem 4rem;
+    font-size: 1;
+    color: white;
+}
+
+.footer .mediasocial {
+    margin-top: 4rem;
+    margin: 1rem 4rem;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+/* media query */
+
+
+
+@media screen and (max-width: 575px) {
+    body {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        font-size: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 100%;
+    }
+}
